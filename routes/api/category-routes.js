@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
       'id',
       'category_name'
     ],
-    order: [['created_at', 'DESC']],
     include: [Product]
   })
     //return database in json
